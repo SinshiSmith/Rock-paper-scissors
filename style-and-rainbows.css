@@ -1,0 +1,74 @@
+body {
+    background-color: #31757c;
+}
+
+@font-face {
+  font-family: Wasteoftime;
+	  src: url(Wasteoftime.ttf);
+}
+@font-face {
+  font-family: Morningtype;
+	  src: url(Morningtype.ttf);
+}
+.player {
+	position: absolute;
+    left: 200px;
+    top: 100px;
+	color: #FFFFFF;
+	font-size: 35px;
+	 font-family: Morningtype;
+}
+
+.computer {
+	position: absolute;
+    left: 900px;
+    top: 100px;
+	color: #FFFFFF;
+	font-size: 35px;
+	font-family: Morningtype;
+}
+
+.result{
+	position: absolute;
+    left: 550px;
+    top: 300px;
+	color: #000000;
+	text-align: center;
+	font-size: 35px;
+  font-family: Wasteoftime;
+}
+.result_text{
+	position: absolute;
+    left: 550px;
+    top: 245px;
+	color: #FFFFFF;
+	font-size: 35px;
+  font-family: Morningtype;
+}
+
+
+.regenerate_btn{
+ position: absolute;
+    bottom: 10px;
+    right: 16px;
+    width: 100px;
+    height: 50px;
+}
+.result_block {
+	background-color: #36c9d8; 
+	position: absolute;
+    left: 0;
+    top: 320px;
+    width: 100%;
+    height: 70px;
+}
+.result_color_block {
+	background-color: #36c9d8; 
+	position: absolute;
+    left: 200;
+    top: 500px;
+    width: 70px;
+    height: 70px;
+}
+
+}

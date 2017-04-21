@@ -1,3 +1,11 @@
+function Loading()
+{
+
+// Defining Players
+var Comp = makeyourmove();
+var z = makeyourmove();
+
+
 function makeyourmove()
 {
   var move = "x";
@@ -18,30 +26,58 @@ return move;
 
 
 
+//Result Functions
 function Rules(player, comp)
 {
+  //Logging things for later
   console.log("p1: " + player);
   console.log ("com: " + comp);
 
-  if (player == "Paper" && comp =="Rock")
+  if (player == "Paper" && comp =="Rock"){
     console.log("Winner");
-  else if (player == "Paper" && comp =="Scissors")
+    document.getElementById("end_game").innerHTML = "Player Wins";
+  document.getElementById('block_color').style.backgroundColor="#4bd836";
+  }
+  else if (player == "Paper" && comp =="Scissors"){
     console.log("Loser");
-  else if (player == "Rock" && comp =="Paper")
+    document.getElementById("end_game").innerHTML = "Computers > Humans";
+     document.getElementById('block_color').style.backgroundColor="#d83636";
+  }
+  else if (player == "Rock" && comp =="Paper"){
     console.log("Loser");
-  else if (player == "Rock" && comp =="Scissors")
+        document.getElementById("end_game").innerHTML = "Computers > Humans";
+             document.getElementById('block_color').style.backgroundColor="#d83636";
+  }
+  else if (player == "Rock" && comp =="Scissors"){
     console.log("Winner");
-  else if (player == "Scissors" && comp =="Paper")
+     document.getElementById("end_game").innerHTML = "Player Wins";
+      document.getElementById('block_color').style.backgroundColor="#4bd836";
+  }
+  else if (player == "Scissors" && comp =="Paper"){
     console.log("Winner");
-  else if (player == "Scissors" && comp =="Rock")
+     document.getElementById("end_game").innerHTML = "Player Wins";
+      document.getElementById('block_color').style.backgroundColor="#4bd836";
+  }
+  else if (player == "Scissors" && comp =="Rock"){
     console.log("Loser");
-  else
+    document.getElementById("end_game").innerHTML = "Computers > Humans";
+         document.getElementById('block_color').style.backgroundColor="#d83636";
+  }
+  else{
       console.log("Draw");
+      document.getElementById("end_game").innerHTML = "Draw";   
+        document.getElementById('block_color').style.backgroundColor="#cfd836";
+    }
 }
 
 
-var Comp = makeyourmove();
-var z = makeyourmove();
-console.log(Rules(z,Comp));
-//version 0.5 date 21/4/2017
+//Calling for players
+Rules(z, Comp);
+//console.log(Rules(z,Comp));
+document.getElementById("p1").innerHTML = "Player: "+z;
+document.getElementById("com").innerHTML = "Compter: "+Comp;
+
+//version 0.6 date 21/4/2017
 //first step\
+//Second step naw
+}
