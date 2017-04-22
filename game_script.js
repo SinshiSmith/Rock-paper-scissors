@@ -3,14 +3,7 @@ function Loading()
 
 // Defining Players
 var Comp = makeyourmove();
-var z ;
-fuction paper(z){z = "Paper"};
-fuction rock(z){z = "Rock"};
-fuction scissors(z){z = "Scissors"};
-<Button onClick="rock(z)"> Rock  <Button/>
-<Button onClick="paper(z)"> Paper  <Button/>
-<Button onClick="scissors(z)"> Scissors  <Button/>
-
+var z makeyourmove();
 function makeyourmove()
 {
   var move = "x";
